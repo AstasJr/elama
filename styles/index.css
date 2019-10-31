@@ -2,6 +2,7 @@ body {
 	font-family: 'Museo Sans 300';
 	color: #1D1D39;
 	background-color: #E5E5E5;
+	min-width: 560px;
 }
 
 h1 {
@@ -14,6 +15,10 @@ a {
 	color: #039BE6;
 	font-size: 14px;
 
+}
+
+li {
+	list-style: none;
 }
 
 p {
@@ -42,10 +47,10 @@ button {
 	width: 1160px;
 	margin: auto;
 }
+
 .navbar {
 	background-color: #FFFFFF;
 }
-
 .navbar-wrap {
 	display: flex;
 	align-items: center;
@@ -60,19 +65,13 @@ button {
 	flex: 12;
 	display: flex;
 }
-
 .navbar ul li {
 	float: left;
 	align-items: center;
-	list-style: none;
 	justify-content: space-between;
 	flex: 2;
 }
 .navbar ul li:last-child {
-	float: left;
-	align-items: center;
-	list-style: none;
-	justify-content: space-between;
 	flex: 7;
 }
 .navbar ul li a {
@@ -113,6 +112,7 @@ button {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	border-top-right-radius: 50px;
+	max-width: 100%;
 }
 
 .brief {
@@ -191,7 +191,7 @@ button {
 .macbook {
 	flex: 1;
 	background: no-repeat url('../images/macbook.png');
-
+	min-height: 350px;
 }
 
 .main__content {
@@ -214,7 +214,6 @@ button {
 
 .scheme {
 	background-color: #F2F3F8;
-	padding-top: 120px;
 	padding-bottom: 120px;
  }
 
@@ -224,21 +223,22 @@ button {
  	justify-content: space-between;
 }
 
+.scheme__item {
+	padding-top: 120px;
+}
+
 .scheme__item:nth-child(1) {
-	background: no-repeat url("../images/arrow.png"); 
-	background-position: 250px 0;
+	background: no-repeat 250px 100px url("../images/arrow.png"); 
   	flex: 3;
  }
  
 .scheme__item:nth-child(2) {
-	background: no-repeat url("../images/arrow2.png");
- 	background-position: 125% 50%;
-	flex: 2;
+	background: no-repeat 125% 200px url("../images/arrow2.png");
+ 	flex: 2;
 }
 
 .scheme__item:nth-child(3) {
-	background: no-repeat url("../images/arrow2.png");
- 	background-position: -30px 50%;
+	background: no-repeat -30px 172px url("../images/arrow2.png");
 	flex: 2;
 }
  
@@ -284,7 +284,11 @@ button {
 .help {
 	text-align: center;
 	flex: 1;
-	background: no-repeat 320px top url("../images/newwindow.png");
+}
+
+.help a {
+	padding: 0 10px;
+	background: no-repeat top right url("../images/newwindow.png");
 }
 
 .footer__navbar ul li {
@@ -297,6 +301,7 @@ button {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .phone {
@@ -307,6 +312,7 @@ button {
 .city {
 	color: #828282;
 	line-height: 26px;
+	width: 100%;
 }
 
 .props {
@@ -323,8 +329,8 @@ button {
 	align-items: center;
 }
 
-.icons img {
-	padding: 10px;
+.icons a {
+	margin: 10px;
 }
 
 .rights {
@@ -332,6 +338,7 @@ button {
 	justify-content: space-between;
 	align-items: center;
 	line-height: 24px;
+	padding-bottom: 20px;
 }
 
 .rights p {
